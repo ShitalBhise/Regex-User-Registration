@@ -49,4 +49,21 @@ public class UserRegistration {
 
 	}
 
+	public void Email() {
+
+		System.out.println("Enter Email Address");
+		Scanner scanner = new Scanner(System.in);
+		String email = scanner.nextLine();
+
+		/*
+		 * Ablidity to to enter a valid email address
+		 * 
+		 */
+		if (Pattern.matches("^[a-z]+([.][a-z]+)*@bl+[.]co([.]in)*", email) == true)
+
+			System.out.println("Valid Input ");
+		else
+			System.out.println("Invalid Input ");
+
+	}
 }

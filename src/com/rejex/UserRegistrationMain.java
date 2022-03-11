@@ -24,8 +24,9 @@ public class UserRegistrationMain {
 		 * method call
 		 * 
 		 */
-		R.FirstName();
-		R.LastName();
+		// R.FirstName();
+		// R.LastName();
+		R.Email();
 	}
 
 }
