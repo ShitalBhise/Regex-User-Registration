@@ -25,6 +25,7 @@ public class UserRegistrationMain {
 		 * 
 		 */
 		R.FirstName();
+		R.LastName();
 	}
 
 }

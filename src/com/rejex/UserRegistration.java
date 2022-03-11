@@ -11,10 +11,11 @@ import java.util.regex.Pattern;
 */
 
 public class UserRegistration {
+	static Scanner scanner = new Scanner(System.in);
 
 	public void FirstName() {
 		System.out.println("Enter First Name");
-		Scanner scanner = new Scanner(System.in);
+
 		String fN = scanner.nextLine();
 
 		/*
@@ -27,7 +28,25 @@ public class UserRegistration {
 		else
 			System.out.println("Invalid Input ");
 
-		scanner.close();
+		// scanner.close();
+	}
+
+	public void LastName() {
+
+		System.out.println("Enter Name");
+		Scanner scanner = new Scanner(System.in);
+		String lN = scanner.nextLine();
+
+		/*
+		 * Ablidity to check Last name starts with Cap and has minimum 3 characters
+		 * 
+		 */
+		if (Pattern.matches("[a-z]{2,}[A-Z]{1}", lN) == true)
+
+			System.out.println("Valid Input ");
+		else
+			System.out.println("Invalid Input ");
+
 	}
 
 }
