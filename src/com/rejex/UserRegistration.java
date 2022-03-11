@@ -84,4 +84,24 @@ public class UserRegistration {
 			System.out.println("Invalid Input ");
 
 	}
+
+	public void Password() {
+
+		System.out.println("Enter Password");
+		Scanner scanner = new Scanner(System.in);
+		String Rule1 = scanner.nextLine();
+
+		/*
+		 * to follow pre-defined Password rules.
+		 * 
+		 * Rule1 – minimum 8 Characters - NOTE – All rules must
+		 * 
+		 */
+		if (Pattern.matches("\"^[A-Za-z0-9]{8,}$\", p", Rule1) == true)
+
+			System.out.println("Valid Input ");
+		else
+			System.out.println("Invalid Input ");
+
+	}
 }
