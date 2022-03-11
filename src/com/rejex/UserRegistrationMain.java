@@ -26,7 +26,8 @@ public class UserRegistrationMain {
 		 */
 		// R.FirstName();
 		// R.LastName();
-		R.Email();
+		// R.Email();
+		R.MobileFormat();
 	}
 
 }

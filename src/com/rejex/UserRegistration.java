@@ -66,4 +66,22 @@ public class UserRegistration {
 			System.out.println("Invalid Input ");
 
 	}
+
+	public void MobileFormat() {
+
+		System.out.println("Enter Mobile Number");
+		Scanner scanner = new Scanner(System.in);
+		String MbFormat = scanner.nextLine();
+
+		/*
+		 * Ablidity to to follow pre-defined Mobile Format
+		 * 
+		 */
+		if (Pattern.matches("^[1-9]{2}\s{1}[1-9]{1}[0-9]{9}$", MbFormat) == true)
+
+			System.out.println("Valid Input ");
+		else
+			System.out.println("Invalid Input ");
+
+	}
 }
